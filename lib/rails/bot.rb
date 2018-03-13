@@ -1,6 +1,7 @@
 module Rails
   module Bot
   	require 'google_custom_search_api'
+    require "rails/bot/railtie" if defined?(Rails)
   	#AIzaSyB8_ZgkEqRWz6Rgir7nYKQrvmYRzHkOjbk
     def self.conversation message
     	"Hey Just received your message: " +  message
