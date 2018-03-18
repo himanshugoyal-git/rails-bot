@@ -10,4 +10,21 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
 //= require_tree .
+
+var scroller = 300;
+$('.chat-history').on("append",function(){
+	scroller = scroller + 200;
+$('.chat-history').animate({
+    scrollTop:  scroller
+	});
+});
+
+$('#msg_text').on("focus",function(){
+	$('#chat-message-counter').text('')
+})	
+
+    
+			
+

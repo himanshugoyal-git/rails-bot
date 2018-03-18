@@ -6,6 +6,11 @@ source 'https://rubygems.org'
 gemspec
 gem 'google_custom_search_api'
 gem 'railties'
+gem 'coffee-rails'
+gem 'puma', group: [:development]
+gem 'redis'
+gem 'jquery-rails'
+gem 'devise'
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or
 # Git. Remember to move these dependencies to your gemspec before releasing
