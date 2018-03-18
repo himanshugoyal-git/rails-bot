@@ -53,10 +53,12 @@ The above would create files for you
 
 In your application.html.erb, in body add this
 
+```ruby
   <%= render "shared/chat"%>
+```
 
 Post that add these methods to your ApplicationHelper(application_helper.rb)
-
+```ruby
   def resource_name
     :user
   end
@@ -68,9 +70,10 @@ Post that add these methods to your ApplicationHelper(application_helper.rb)
   def devise_mapping
     @devise_mapping ||= Devise.mappings[:user]
   end
+```
   
   Post that add this to your connection.rb
-  
+```ruby  
   identified_by :current_user
  
     def connect
@@ -85,7 +88,7 @@ Post that add these methods to your ApplicationHelper(application_helper.rb)
           reject_unauthorized_connection
         end
       end
-
+```
 
 
 
