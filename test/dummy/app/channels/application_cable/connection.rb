@@ -8,8 +8,7 @@ module ApplicationCable
      
     private
       def find_verified_user
-      	current_user = 1 #Only To Test The Gem 
-        if current_user 
+        if current_user = User.find_by(id: cookies.signed['user.id']) 
           current_user
         else
           reject_unauthorized_connection
