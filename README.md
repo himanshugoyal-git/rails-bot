@@ -51,7 +51,6 @@ The above would create files for you
       create  app/channels/chat_channel.rb => For communicating with the client
       create  app/assets/javascripts/channels/chat.coffee => For communicating with the server
       create  app/jobs/ruby_bot_job.rb => Bot Responds via this Active Job
-      create  config/initalizers/warden_hooks.rb => For Validation at Websocket Connection 
 
 In your application.html.erb, in body add this
 
