@@ -4,11 +4,7 @@ class HomeController < ApplicationController
   end
 
   def broadcast_message
-  	  	ActionCable.server.broadcast(
-  "chat_Best_Room",
-  sent_by: 'Paul',
-  body: 'This is a cool chat app.',
-  time: Time.now.strftime("at %I:%M%p")
-)
+  data = Rails::Bot.search(params[:search])
+  ActionCable.server.broadcast("chat_Best_Room",data)
   end
 end
