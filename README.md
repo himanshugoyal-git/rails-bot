@@ -1,5 +1,5 @@
 # Rails::Bot
-Building a bot for the chatting functionality in the Rails Application. Write now using GoogleCustomSearchApi for the query part.
+Building a bot for the chatting functionality in the Rails Application. Write now using GoogleCustomSearchApi for the query part. You can check it out here: https://www.ideakart.com (For Desktop Version Only)
 
 <a href="https://badge.fury.io/rb/rails-bot"><img src="https://badge.fury.io/rb/rails-bot.svg" alt="Gem Version" height="18"></a>
 
